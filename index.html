@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="paranormalApp">
+	<head>
+		<meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+		<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+ 		<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+ 		<!-- <link rel="stylesheet" type="text/css" href="css/paranormal.css"> -->
+	<title>VSS LLC</title>
+</head>
+
+<body>
+	<div class='container'>
+		<header class="page-header small-caps" ng-controller="contactCtrl">
+			<ul class="nav nav-pills pull-right h2">
+				<li><a href="#">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+			</ul>
+			<ul class="nav nav-pills pull-left h2">
+				<li><a href="#" ng-click="helpNow()">Need help right now?</a></li>
+			</ul>
+		</header>
+
+		<div ng-controller="contactCtrl">
+				<div ng-show="shouldShowContact()">Call 555-122-9999</div>
+		</div>
+
+
+	<div class="jumbotron blue small-caps">
+		<h1> Venkman, Spengler, and Stantz, LLC </h1>
+		<p class="lead">Professional paranormal investigation and elimination services</p>
+	</div>
+
+	<div class="big-divs">
+		<h2 id="services">Services</h2>
+
+		<h4>Investigation</h4>
+		<p>
+			Our team will discretely investigate your home or place of business.
+		</p>
+		<h4>Elimination</h4>
+		<p>
+			If it is determined that you do have x, our team then provides elimination services.
+		</p>
+	</div>
+
+	<h2 id="about" class="big-divs">About Us</h2>
+
+ <div ng-controller="staffCtrl">
+	<div ng-repeat="members in staff">
+		<img ng-src="{{staff.picture}}"> 
+		<h4>{{staff.name}}</h4>
+		<p>{{staff.profile}}</p>
+	</div>
+
+<h2><a href="#">Contact Us</a></h2>
+
+	<p></p>
+
+	<form role="form">
+		<div ng-controller="formCtrl">
+			<div class="form-group">
+				<label>Name</label>
+				<input type="name" class="form-control" />
+			</div>
+
+			<div class="form-group">
+				<label>Phone Number</label>
+				<input type="name" class="form-control" />
+			</div>
+
+			<div class="form-group">
+				<label for="email">E-mail</label>
+				<input type="email" class="form-control" />
+			</div>
+
+
+			<div>
+				<label for="comment">Comments</label>
+				<textarea class="form-control" rows="5" id="comment"></textarea>
+			</div>
+			<button type="submit" class="btn btn-default"> Submit</button>
+		
+			attach picture
+			choose file no file chosen
+		</div>
+	</form>
+
+
+<input type="dropdown">
+
+
+
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	
+	
+	<script src="js/app.js"></script>
+ 
+	</body>
+</html>
