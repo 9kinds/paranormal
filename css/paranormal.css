@@ -5,14 +5,16 @@ html, body {
 body {
 	background-color: black;
 	color: white;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 
 .small-caps {
 	font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-h2, h4 {
+h1, h2, h3, h4 {
 		font-family: 'Alegreya Sans SC', sans-serif;
+		color: #337ab7;
 }
 
 label {
@@ -38,8 +40,90 @@ label {
 	margin-top: -20px
 }
 
+#call-button {
+	display: block;
+}
 /*
 .minor {
 	font-family: 'Alegreya Sans', sans-serif;
 }
 */
+
+#help {
+	position: absolute;
+	z-index: 101;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: red;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	line-height: 4;
+	overflow: hidden;
+	-webkit-box-shadow: 0 0 5px black;
+	-moz-box-shadow: 0 0 5px black;
+	box-shadow: 0 0 5px black;
+}
+
+#help a {
+	color: red;
+	font-size: 30px;
+	padding-bottom: -2px;
+}
+
+.btn-help {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-help:focus,
+.btn-help.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-help:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+#close {
+	float: right;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 1;
+	color: black;
+	margin-right: 10px;
+}
+
+p {
+	line-height: 1.4em;
+	font-size: 1.4em;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+}
+
+.media {
+	width: 70%;
+	margin: auto;
+}
+
+@media only screen and (max-width: 500px) {
+	#help span {
+		display: none;
+	}
+}
+
+.navbar a {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: white;
+}
+.active {
+
+}

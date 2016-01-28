@@ -49,3 +49,7 @@ nonhuman
 	hand
 
 	columbia university
+
+	headquarters address
+	14 n. moore st, manhattan ny
+	

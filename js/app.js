@@ -1,16 +1,14 @@
-'use strict';
+angular.module("paranormalApp", [])
 
-var app = angular.module("paranormalApp", []);
-
-app.controller("staffCtrl", function($scope){
+.controller("staffCtrl", function($scope){
 	$scope.staff = [
 		{
 			name: "Peter Venkman, Ph.D.",
-			picture:"http://placekitten.com/200/300",
-			profile:"Dr. Venkman, who has doctorates in both psychology and parapsychology,"
+			picture: "img/peter-venkman.jpg",
+			profile: "Dr. Venkman, who has doctorates in both psychology and parapsychology,"
 		},		{
 			name: "Raymond Stantz, Ph.D.",
-			picture:"",
+			picture: "http://placehold.it/200x200",
 			profile:"Dr. Stantz has been described as 'the heart of the Ghostbusters.' In his spare time he restores vintage cars and runs 'Ray's Occult Books.' "
 		},		{
 			name: "Egon Spengler, Ph.D.",
@@ -30,10 +28,11 @@ app.controller("staffCtrl", function($scope){
 			profile:"Mr. Peck, formerly an inspector with the Environmental Protection Agency, currently heads the Paranormal Contracts Oversight Commission. This agency provides oversight to the firm with regard to public safety concerns as well as possible environmental impact."
 		}
 
-	]
-});
+	];
+	$scope.firstguy = "Pete Venkman";
+})
 
-app.controller("reviewCtrl", function($scope){
+.controller("reviewCtrl", function($scope){
 	$scope.reviewers = [
 		{name: "Louis Tully",
 		testimonial:""
@@ -42,13 +41,13 @@ app.controller("reviewCtrl", function($scope){
 		testimonial:""
 		}
 	]
-});
+})
 
-app.controller("formCtrl", ['$scope', function($scope){
+.controller("formCtrl", ['$scope', function($scope){
 	
 }])
 
-app.controller("contactCtrl", function($scope){
+.controller("contactCtrl", function($scope){
 	$scope.openContact = false;
 
 	function helpNow(){
@@ -61,5 +60,5 @@ app.controller("contactCtrl", function($scope){
 
 	$scope.helpNow = helpNow;	
 	$scope.shouldShowContact = shouldShowContact;
-})
+});
 
