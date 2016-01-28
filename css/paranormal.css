@@ -127,3 +127,12 @@ p {
 .active {
 
 }
+
+.media-right {
+	width: 30%;
+}
+
+.media-right img {
+	width: 100%;
+	height: auto;
+}

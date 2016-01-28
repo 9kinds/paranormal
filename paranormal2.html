@@ -65,7 +65,7 @@
 </div>
 
 <!--
-<div id="about" class="big-divs" ng-controller="staffCtrl">
+<div id="about" class="big-divs" >
 	<h2>About Us</h2>
 		<div ng-repeat="member in staff">
 			<img ng-repeat="member in staff" ng-src="{{member.picture}}"> 
@@ -75,29 +75,31 @@
 		</div>
 </div>
 -->
-<div id="about" class="container">
+<div id="about" class="container" ng-controller="staffCtrl">
 <h2>About Us</h2>
 <h4>Our Staff</h4>
-	<div id="staffCarousel" class="big-divs carousel slide" data-ride="carousel">
+	<div id="staffCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#staffCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#staffCarousel" data-slide-to="1"></li>
 			<li data-target="#staffCarousel" data-slide-to="2"></li>
 			<li data-target="#staffCarousel" data-slide-to="3"></li>			
+			<li data-target="#staffCarousel" data-slide-to="4"></li>			
 		</ol>
 		<div class="carousel-inner" role="listbox">
-			<div class="item active">
+			<div class="item" ng-repeat="staff in staffs" ng-class="{active : $first}">
 				<div class="media">
 					<div class="media-body">
-						<h4 class="media-heading">Peter Venkman, Ph.D.</h4>
-						<p>Dr. Venkman, who has doctorates in both psychology and parapsychology, etc etc</p>
+						<h4 class="media-heading" ng-bind-template="{{staff.name}}"></h4>
+						<p ng-bind-template="{{staff.profile}}"></p>
 					</div>
 					<div class="media-right">
-						<img class="media-object" src="img/peter-venkman.jpg" width="200" height="200">
+						<img class="media-object" ng-src="{{staff.picture}}">
 					</div>
 				</div>
 			</div>
 
+<!--
 			<div class="item">
 				<div class="media">
 					<div class="media-body">
@@ -132,7 +134,7 @@
 					</div>
 				</div>
 			</div>
-			
+			-->
 
 
 

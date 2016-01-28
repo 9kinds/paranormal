@@ -1,33 +1,28 @@
 angular.module("paranormalApp", [])
 
 .controller("staffCtrl", function($scope){
-	$scope.staff = [
+	$scope.staffs = [
 		{
-			name: "Peter Venkman, Ph.D.",
-			picture: "img/peter-venkman.jpg",
-			profile: "Dr. Venkman, who has doctorates in both psychology and parapsychology,"
+			'name': "Peter Venkman, Ph.D.",
+			'picture': "img2/peter-venkman.jpg",
+			'profile': "Dr. Venkman, who has doctorates in both psychology and parapsychology,"
 		},		{
-			name: "Raymond Stantz, Ph.D.",
-			picture: "http://placehold.it/200x200",
-			profile:"Dr. Stantz has been described as 'the heart of the Ghostbusters.' In his spare time he restores vintage cars and runs 'Ray's Occult Books.' "
+			'name': "Raymond Stantz, Ph.D.",
+			'picture': "img2/stantz.jpg",
+			'profile':"Dr. Stantz has been described as 'the heart of the Ghostbusters.' In his spare time he restores vintage cars and runs 'Ray's Occult Books.' "
 		},		{
-			name: "Egon Spengler, Ph.D.",
-			picture:"",
-			profile:"Dr. Spengler is a former professor of paranormal studies at Columbia University. He has designed and built much of the firm's equipment. In his spare time he collects spores, molds, and fungus."
+			'name': "Egon Spengler, Ph.D.",
+			'picture':"img2/egon.jpg",
+			'profile':"Dr. Spengler is a former professor of paranormal studies at Columbia University. He has designed and built much of the firm's equipment. In his spare time he collects spores, molds, and fungus."
 		},		{
-			name: "Winston Zeddemore",
-			picture:"",
-			profile:"Mr. Zeddemore is a graduate of Air Force Command ECM school. He joined the firm shortly after its inception. In his spare time he is working on advancing his karate rank, currently a 1st Dan black belt."
+			'name': "Winston Zeddemore",
+			'picture':"img2/winston.jpeg",
+			'profile':"Mr. Zeddemore is a graduate of Air Force Command ECM school. He joined the firm shortly after its inception. In his spare time he is working on advancing his karate rank, currently a 1st Dan black belt."
 		},		{
-			name: "Janine Melnitz",
-			picture:"",
-			profile:"Ms. Melnitz is the firm's receptionist and first point of contact for clients. In her spare time she's an avid reader. "
-		},	{
-			name: "Walter Peck",
-			picture:"",
-			profile:"Mr. Peck, formerly an inspector with the Environmental Protection Agency, currently heads the Paranormal Contracts Oversight Commission. This agency provides oversight to the firm with regard to public safety concerns as well as possible environmental impact."
+			'name': "Janine Melnitz",
+			'picture':"img2/janine.jpg",
+			'profile':"Ms. Melnitz is the firm's receptionist and first point of contact for clients. In her spare time she's an avid reader. "
 		}
-
 	];
 	$scope.firstguy = "Pete Venkman";
 })
