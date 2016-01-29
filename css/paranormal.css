@@ -6,7 +6,27 @@ body {
 	background-color: black;
 	color: white;
 	font-family: 'Alegreya Sans', sans-serif;
+/* start of example css */
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
+
+/*
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block; 
+  margin-bottom: 20px; 
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+ end of example css */
+
 
 .small-caps {
 	font-family: 'Alegreya Sans SC', sans-serif;
@@ -98,6 +118,29 @@ label {
 	margin-right: 10px;
 }
 
+.navbar {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	background-color: black;
+}
+
+.navbar-default {
+	border-color: black;
+}
+.navbar-header .icon-bar {
+	color: #337ab7
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #337ab7;
+    background-color: black;
+   }
+
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+    color: #337ab7;
+    background-color: transparent;
 p {
 	line-height: 1.4em;
 	font-size: 1.4em;
@@ -120,13 +163,7 @@ p {
 	}
 }
 
-.navbar a {
-	font-family: 'Alegreya Sans SC', sans-serif;
-	color: white;
-}
-.active {
 
-}
 
 .media-right {
 	width: 30%;
@@ -135,4 +172,8 @@ p {
 .media-right img {
 	width: 100%;
 	height: auto;
+}
+
+#testimonials .panel-body {
+	background-color: #337ab7;
 }
