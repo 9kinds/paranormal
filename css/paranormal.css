@@ -7,26 +7,14 @@ body {
 	color: white;
 	font-family: 'Alegreya Sans', sans-serif;
 /* start of example css */
-  padding-top: 70px;
+  padding-top: 90px;
   padding-bottom: 30px;
 }
 
-/*
-.theme-dropdown .dropdown-menu {
-  position: static;
-  display: block; 
-  margin-bottom: 20px; 
+p {
+	line-height: 1.4em;
+	font-size: 1.7em;
 }
-
-.theme-showcase > p > .btn {
-  margin: 5px 0;
-}
-
-.theme-showcase .navbar .container {
-  width: auto;
-}
- end of example css */
-
 
 .small-caps {
 	font-family: 'Alegreya Sans SC', sans-serif;
@@ -41,12 +29,6 @@ label {
 		font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-.big-divs {
-	height: 100%;
-	width: 100%;
-	min-height: 100%
-}
-
 .blue {
 	background-color: #337ab7;
 }
@@ -55,67 +37,30 @@ label {
 	border-bottom: 0px solid black;
 }
 
-
+/*
 .page-header .nav{ 
 	margin-top: -20px
 }
 
-#call-button {
-	display: block;
-}
-/*
 .minor {
 	font-family: 'Alegreya Sans', sans-serif;
 }
 */
 
 #help {
-	position: absolute;
-	z-index: 101;
-	top: 0;
-	left: 0;
-	right: 0;
-	background: red;
 	text-align: center;
 	font-size: 30px;
 	font-family: 'Alegreya Sans SC', sans-serif;
-	line-height: 4;
-	overflow: hidden;
-	-webkit-box-shadow: 0 0 5px black;
-	-moz-box-shadow: 0 0 5px black;
-	box-shadow: 0 0 5px black;
+	background-color: #a94442;
+	border-color: #a94442;
+	color: white;
 }
 
-#help a {
-	color: red;
-	font-size: 30px;
-	padding-bottom: -2px;
-}
-
-.btn-help {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
-}
-.btn-help:focus,
-.btn-help.focus {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #8c8c8c;
-}
-.btn-help:hover {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
-}
-
-#close {
-	float: right;
-	font-size: 50px;
-	font-weight: 700;
-	line-height: 1;
-	color: black;
-	margin-right: 10px;
+.btn-danger {
+	background-color: white;
+	color: #a94442;
+	border-color: #a94442;
+	font-size: 30px
 }
 
 .navbar {
@@ -123,6 +68,9 @@ label {
 	background-color: black;
 }
 
+.navbar-collapse {
+	padding-top: 20px;	
+}
 .navbar-default {
 	border-color: black;
 }
@@ -141,10 +89,7 @@ label {
 .navbar-default .navbar-nav>li>a:hover {
     color: #337ab7;
     background-color: transparent;
-p {
-	line-height: 1.4em;
-	font-size: 1.4em;
-}
+
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -163,9 +108,7 @@ p {
 	}
 }
 
-
-
-.media-right {
+.media-object {
 	width: 30%;
 }
 
@@ -174,6 +117,21 @@ p {
 	height: auto;
 }
 
-#testimonials .panel-body {
-	background-color: #337ab7;
+blockquote p {
+	font-size: 1.4em;
+}
+
+blockquote span {
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+#home {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 30px;
+	color: #337ab7;
+}
+
+.vert-fill {
+	height: 100vh;
 }

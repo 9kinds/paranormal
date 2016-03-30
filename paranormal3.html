@@ -18,26 +18,20 @@
  		<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
  		<link rel="stylesheet" type="text/css" href="css/paranormal.css">
 	
-		<title>VSS LLC</title>
+		<title>VSS LLP</title>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<!--
-	<div id="help">
-		<span>Need help right now? </span><a class="btn btn-default" role="button" href="tel:1-212-897-1964"> <i class="fa fa-phone"> </i> 212-897-1964</a> 
-			<button type="button" id="close">×</button>
-	</div>
-	-->
 	<nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="180">
 		<div class="container">
-			<div class="navbar-header">
+			<div class="nav navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
 	           		<span class="sr-only">Toggle navigation</span>
 	       			<span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
 	       		    <span class="icon-bar"></span>
        			</button>
-       			<a class="navbar-brand" id="home">VSS, LLP</a>
+       			<span class="navbar-brand logo" id="home">VSS, LLP</span>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right h2">
@@ -51,14 +45,20 @@
 		</div>	
 	</nav>
 
+	<div class="alert alert-danger alert-dismissible" role="alert" id="help">
+  		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  		<strong>Need help right now? </strong>
+  		<a class="btn btn-danger" role="button" href="tel:1-212-897-1964"><i class="fa fa-phone"></i> 212-897-1964</a>
+</div>
+
 <div class="container theme-showcase" role="main">
 	<div class="jumbotron blue small-caps">
-		<h1> Venkman, Spengler, and Stantz, LLC </h1>
+		<h1>Venkman, Spengler, and Stantz, LLP</h1>
 		<p class="lead">Professional paranormal investigation and elimination services</p>
 	</div>
 
 
-	<div class="big-divs container" id="services">
+	<div class="container" id="services">
 	<h1>Services</h1>
 	<h3>Investigation</h3>
 	<p>
@@ -70,7 +70,7 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
-<div id="about" class="container" ng-controller="staffCtrl">
+<div id="about" class="container vert-fill" ng-controller="staffCtrl">
 	<h2>About Us</h2>
 	<h3>Our Staff</h3>
 		<div id="staffCarousel" class="carousel slide" data-ride="carousel">
@@ -110,28 +110,23 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
-<div id="testimonials" class="container">
+<div id="testimonials" class="container vert-fill">
 	<h3>Testimonials</h3>
 
-	<blockquote>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</blockquote>
-
-	<div class="panel panel-default">
-		<div class="panel-body">
-			quote here
+	<div class="row">
+		<div class="col-md-6">
+		<blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+			<span>- Dana Barrett</span>
+			</p>
+		</blockquote>
 		</div>
-	</div>		
-	<div class="panel panel-default">
-		<div class="panel-body">
-			quote here
+		<div class="col-md-6">
+		<blockquote>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</blockquote>
 		</div>
-	</div>		
-	<div class="panel panel-default">
-		<div class="panel-body">
-			quote here
-		</div>
-	</div>		
+	</div>
 </div>
 		
 <div id="contact" class="container">
@@ -173,17 +168,24 @@
 	</div>
 
 	<div class="col-md-4">
-		<a class="twitter-timeline" href="https://twitter.com/9_kinds/timelines/690129186690834432" data-widget-id="690131467012325377">VSS, LLC</a>
-	
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/bdg_now_accepting_pp_2line_w.png" border="0" alt="Now Accepting PayPal"></a><div style="text-align:center"><a href="https://www.paypal.com/webapps/mpp/how-paypal-works"><font size="2" face="Arial" color="#0079CD">How PayPal Works</font></a></div></td></tr></table><!-- PayPal Logo -->
 	</div>
 </div>
+
+<!-- embedded twitter feed 
+<a class="twitter-timeline" href="https://twitter.com/9_kinds/timelines/690129186690834432" data-widget-id="690131467012325377">VSS, LLP</a>
+	
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+-->
+
 
 <div id="location">
 	<address>
 		<strong>New York branch</strong><br>
 		and<br>
-		city state zip
+		city state zip<br>
+		<a href="tel:1-212-897-1964"><i class="fa fa-phone"></i> 212-897-1964</a>
+</d
 	</address>	
 
 	<address>
@@ -204,7 +206,7 @@
 	
 	
 	<script src="js/app.js"></script>
-	<script src="js/paranormal.js"></script>
+	<!-- <script src="js/paranormal.js"></script> -->
  
 	</body>
 </html>
