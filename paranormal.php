@@ -19,7 +19,7 @@
 $name = $tel = $email = $pic = $comment = '';
 
 $response_array = array (
-	"This appears to be a class VII free-roamingcorporeal entity. Our on-call staff has been alerted and you will be contacted within five minutes.",
+	"This appears to be a class VII free-roaming corporeal entity. Please evacuate to a safe place.</span> Our on-call staff has been alerted and you will be contacted within five minutes.",
 	"This appears to be a class V anchored vapor. You're not in danger, but take care to secure any valuables from the area. Our staff will be in touch with you shortly.",
 	"This appears to be a class I focused vapor. You're not in danger. Our staff will be in touch with you shortly to schedule an visit."
 	);
@@ -59,7 +59,7 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 	} else {
     if (move_uploaded_file($_FILES["pic"]["tmp_name"], $target_file)) {
-        echo "We've analyzed the picture you submitted. $k";
+        echo "Thank you for contacting us, $name.<br> We've analyzed the picture you submitted. $k";
 	    } else {
 	        echo "Sorry, there was an error uploading your file.";
 	    }
