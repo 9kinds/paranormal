@@ -33,6 +33,10 @@ label {
 	background-color: #337ab7;
 }
 
+.home {
+	color: #337ab7;
+}
+
 .page-header {
 	border-bottom: 0px solid black;
 }
@@ -89,49 +93,30 @@ label {
 .navbar-default .navbar-nav>li>a:hover {
     color: #337ab7;
     background-color: transparent;
+}
 
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.carousel-inner {
 	width: 70%;
 	margin: auto;
 }
 
-.media {
-	width: 70%;
-	margin: auto;
-}
-
-@media only screen and (max-width: 500px) {
+@media only (max-width: 500px) {
 	#help span {
 		display: none;
 	}
 }
 
-.media-object {
-	width: 30%;
+.media-body {
+	width: 60%;
 }
 
-.media-right img {
-	width: 100%;
-	height: auto;
-}
-
-blockquote p {
-	font-size: 1.4em;
-}
-
-blockquote span {
-	font-family: 'Alegreya Sans SC', sans-serif;
-}
 #home {
 	font-family: 'Alegreya Sans SC', sans-serif;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	font-size: 30px;
+	font-size: 1.5em;
 	color: #337ab7;
 }
 
-.vert-fill {
-	height: 100vh;
+#thanks {
+	font-size: 1.5em;
 }
+

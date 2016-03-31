@@ -38,9 +38,7 @@ angular.module("paranormalApp", [])
 	]
 })
 
-.controller("formCtrl", ['$scope', function($scope){
-	
-}])
+
 
 .controller("contactCtrl", function($scope){
 	$scope.openContact = false;

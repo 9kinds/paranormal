@@ -31,9 +31,11 @@
 		            <span class="icon-bar"></span>
 	       		    <span class="icon-bar"></span>
        			</button>
-       			<span class="navbar-brand logo" id="home">VSS, LLP</span>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-left h1 home" style="padding-top: 5px;">
+					<li><span id="home">VSS, LLP</span></li>
+				</ul>
 				<ul class="nav navbar-nav pull-right h2">
 					<li class="active"><a href="#">Home</a></li>
 					<li><a href="#services">Services</a></li>
@@ -47,7 +49,7 @@
 
 	<div class="alert alert-danger alert-dismissible" role="alert" id="help">
   		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  		<strong>Need help right now? </strong>
+  		<strong>Need help right now?  </strong>
   		<a class="btn btn-danger" role="button" href="tel:1-212-897-1964"><i class="fa fa-phone"></i> 212-897-1964</a>
 </div>
 
@@ -61,17 +63,14 @@
 	<div class="container" id="services">
 	<h1>Services</h1>
 	<h3>Investigation</h3>
-	<p>
-		Our team will discretely investigate your home or place of business.
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-	</p>
+	<p>Our team will discretely investigate your home or place of business. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 	<h3>Elimination</h3>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
-<div id="about" class="container vert-fill" ng-controller="staffCtrl">
-	<h2>About Us</h2>
+<div id="about" class="container" ng-controller="staffCtrl">
+	<h1>About Us</h1>
 	<h3>Our Staff</h3>
 		<div id="staffCarousel" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -89,7 +88,7 @@
 							<p ng-bind-template="{{staff.profile}}"></p>
 						</div>
 						<div class="media-right">
-							<img class="media-object" ng-src="{{staff.picture}}">
+							<img height="200px" class="media-object" ng-src="{{staff.picture}}">
 						</div>
 					</div>
 				</div>
@@ -110,62 +109,68 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
-<div id="testimonials" class="container vert-fill">
+<div id="testimonials" class="container">
 	<h3>Testimonials</h3>
 
 	<div class="row">
 		<div class="col-md-6">
 		<blockquote>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-			<span>- Dana Barrett</span>
+			<p style="font-size: 1em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+			<span style="float: right">- Dana Barrett</span>
 			</p>
 		</blockquote>
 		</div>
 		<div class="col-md-6">
 		<blockquote>
-			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p style="font-size: 1em;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+			<span style="float: right">- Louis Tully</span></p>
 		</blockquote>
 		</div>
 	</div>
 </div>
 		
 <div id="contact" class="container">
-<h2>Contact Us</h2>
 <div class="row">
 	<div class="col-md-8">
+		<h1>Contact Us</h1>
+	</div>
+	<div class="col-md-4">
+		<h1>Make a Payment</h1>
+	</div>
+</div>
 
-	<form role="form">
-		<div ng-controller="formCtrl">
+<div class="row">
+	<div class="col-md-8">
+	<form role="form" action="paranormal.php" method="post" name="contact_form" id="form_id" enctype="multipart/form-data">
 			<div class="form-group">
 				<label>Name</label>
-				<input type="name" class="form-control" />
+				<input type="name" name="name" class="form-control" required>
 			</div>
 
 			<div class="form-group">
 				<label>Phone Number</label>
-				<input type="tel" class="form-control" />
+				<input type="tel" name="tel" class="form-control" required>
 			</div>
 
 			<div class="form-group">
 				<label for="email">E-mail</label>
-				<input type="email" class="form-control" />
+				<input type="email" name="email" class="form-control" required>
 			</div>
-
+		<hr>
 			<div class="form-group">
-				<p class="help-block">If you have a picture of your problem, send it to us and we can get a headstart on identification.</p>
+				<p>If you have a picture of your problem, send it to us and we can get a headstart on identification.</p>
 				<label>Photo upload</label>
-				<input type="file">
+				<input type="hidden" name="MAX_FILE_SIZE" value="2097152000000">
+				<input type="file" name="pic">
 			</div>
-
+		<hr>
 			<div class="form-group">
 				<label for="comment">Comments</label>
-				<textarea class="form-control" rows="5" id="comment"></textarea>
+				<textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
 			</div>
-
-			<button type="submit" class="btn btn-default">Submit</button>
-		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
 	</form>
-	</div>
+	</div> <!--end of contact form column -->
 
 	<div class="col-md-4">
 	<!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/bdg_now_accepting_pp_2line_w.png" border="0" alt="Now Accepting PayPal"></a><div style="text-align:center"><a href="https://www.paypal.com/webapps/mpp/how-paypal-works"><font size="2" face="Arial" color="#0079CD">How PayPal Works</font></a></div></td></tr></table><!-- PayPal Logo -->
@@ -180,12 +185,12 @@
 
 
 <div id="location">
+<h1></h1>
 	<address>
 		<strong>New York branch</strong><br>
-		and<br>
-		city state zip<br>
+		14 North Moore St.<br>
+		New York, NY 10013<br>
 		<a href="tel:1-212-897-1964"><i class="fa fa-phone"></i> 212-897-1964</a>
-</d
 	</address>	
 
 	<address>
@@ -195,7 +200,7 @@
 
 	<footer class="footer">
 		<div class="container">
-			@ 2015 Copyright ... 
+			@ 2016 Copyright Shawn Barnes 
 		</div>
 	</footer>
 </div>
