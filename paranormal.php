@@ -49,11 +49,15 @@ if(isset($_POST['pic'])) {
 	}
 }
 
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
-    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-    $uploadOk = 0;
-	}
+if ($_FILES['pic']['name'] !== "") {
+	if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+	    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+	    var_dump($_FILES);
+	    $uploadOk = 0;
+		}
+}
 
+if ($_FILES['pic']['name'] !== "") {
 if ($uploadOk == 0) {
     echo "Sorry, your file was not uploaded.";
 // if everything is ok, try to upload file
@@ -64,8 +68,9 @@ if ($uploadOk == 0) {
 	        echo "Sorry, there was an error uploading your file.";
 	    }
 	}
+}
 
-if (!isset($_FILES['pic']['name']))
+if ($_FILES['pic']['name'] == "") 
 	echo "Thank you for contacting us, $name. We'll be in touch right away!";
 ?>
 </div>
